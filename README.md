@@ -54,7 +54,11 @@ El prototipo web busca representar visualmente cómo el agente:
 - GitHub Pages  
 
 ---
+## 🌐 Página en GitHub Pages
 
+Liga pública del proyecto: 👉 https://kaxeck.github.io/Hackaton-Mantenimiento-Predictivo-de-Flota.github.io/
+
+---
 ## 👤 Autor
 
 - [@Kaxeck](https://github.com/Kaxeck)
