@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evaluación de Riesgo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.7/fonts/transformations.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+    <div class="contenedor-principal">
+        <header class="header">
+            <i class="bx bx-spanner bx-md"></i>
+            <div class="header-text">
+                <h1>Asistente de Mantenimiento</h1>
+                <p>Ingresa los datos y calcularé el riesgo.</p>
+            </div>
+        </header>
+
+        <main>
+            <form class="chat-formulario">
+                <div class="input-contenedor">
+                    <label>Numero de la unidad</label>
+                    <input type="text" placeholder="Ej. UNI1684">
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Kilometraje actual</label>
+                    <input type="number" placeholder="Ej. 150000">
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Km último mantenimiento</label>
+                    <input type="number" placeholder="Ej. 145000">
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Código de falla activo</label>
+                    <select>
+                        <option value="no">No</option>
+                        <option value="si">Sí</option>
+                    </select>
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Códigos de falla</label>
+                    <input type="text" placeholder="Ej. TH500, P0420">
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Hábitos de conducción</label>
+                    <select>
+                        <option value="bueno">Bueno</option>
+                        <option value="regular">Regular</option>
+                        <option value="malo">Malo</option>
+                    </select>
+                </div>
+
+                <div class="input-contenedor">
+                    <label>Condiciones de operación</label>
+                    <select>
+                        <option value="normal">Normal</option>
+                        <option value="severas">Severas</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-action">Evaluar unidad</button>
+            </form>
+
+            <div class="resultado riesgo-alto">
+                <div class="aviso">
+                    <h2>Riesgo Detectado: ALTO</h2>
+                    <p>Acción sugerida: <strong>Intervenir unidad inmediatamente.</strong></p>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+
 </html>
